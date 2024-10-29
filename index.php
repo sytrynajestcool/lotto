@@ -15,4 +15,5 @@
 <?php
     echo 'hello World!';
     echo 'siusiak';
+    echo 'cos';
 ?>
