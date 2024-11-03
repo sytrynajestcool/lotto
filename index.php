@@ -10,10 +10,15 @@
     <form action="process.php" method="post"> <!-- formuarz wysylajacy dane metoda post do process.php-->
         <label> Wybierz 6 liczb </label><br>
             <?php for ($i = 1; $i <= 6; $i++): ?> <!-- petla powtarzajaca sie 6 razy -->
-                <input type="number" name="userNumbers[]" min="1" max="49" required><br> <!-- pole do wpisania libcz -->
+                <input type="number" name="userNumbers[]" min="1" max="49" required><br> <!-- pole do wpisania libczb -->
             <?php endfor; ?> <!-- zakonczenie petli -->
         <input type="submit" value="graj">
     </form>
+
+    <p><a href="results.php">Zobacz historię gier</a></p>
+
+
+            <!-- zakonczenie na kroku 13 -->
     
 </body>
 </html>
