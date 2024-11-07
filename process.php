@@ -1,6 +1,19 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOTTO</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    
+
+<div class="container glass">
+    <br><br><br><br>
 <?php
 require 'db_connect.php';
-require 'Lotto.php';
+require 'lotto.php';
 
 // Tablica liczb użytkownika
 $userNumbers = $_POST['userNumbers']; 
@@ -69,4 +82,6 @@ $stmt->bindParam(':matches', $matchesCount);
 // Wykonaj zapytanie
 $stmt->execute();
 ?>
-
+</div>
+</body>
+</html>

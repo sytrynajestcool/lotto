@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HISTORIA</title>
+    <link rel="stylesheet" type="text/css" href="results.css">
+</head>
+<body>
+    
+
+<div class="container glass">
 <?php
     require 'db_connect.php';
 
@@ -6,7 +18,7 @@
     $stmt = $pdo->query($sql);
 
     // Wyświetl wyniki w tabeli HTML
-        echo "<h2>Historia Gier</h2>";
+        echo "<h2>Historia Gier</h2><hr>";
         echo "<table border='1' cellpadding='5' cellspacing='0'>";
         echo "<tr><th>Data</th><th>Twoje Liczby</th><th>Wylosowane Liczby</th><th>Trafienia</th></tr>";
 
@@ -21,3 +33,6 @@
 
         echo "</table>";
 ?>
+</div>
+</body>
+</html>

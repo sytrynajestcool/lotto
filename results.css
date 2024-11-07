@@ -1,0 +1,35 @@
+body {
+    background: url('elo.png');
+    background-size: 100% all;
+    background-position: center;
+}
+
+.container {
+    width: 500px;
+    height: 300px;
+    margin: 200px auto;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+hr {
+    position: absolute; 
+    top: 40px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 50%; 
+    height: 2px; 
+    background-color: white; 
+    border: none; 
+    margin-bottom: 10px;
+}
+.glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    overflow-y: auto;
+}
